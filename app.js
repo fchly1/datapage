@@ -5,6 +5,7 @@ var data = require('./res/data.json');
 var cors = require('cors');
 
 app.use(cors());
+app.use(Express.static('home'));
 app.get('/getData',function(req,res){
 
     res.send(data);
